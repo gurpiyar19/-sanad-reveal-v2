@@ -284,7 +284,7 @@ export default function CurtainOverlay({ onRevealComplete }) {
                     <div className="absolute top-0 left-[28px] w-2 h-full gold-trim shadow-[2px_0_8px_rgba(212,175,55,0.5)]" />
                 </div>
 
-                {/* Center Content Card - Glassmorphism with 3D tilt + Star Border */}
+                {/* Center Content Card - Only Launch Button for V2 */}
                 <StarBorder
                     as="div"
                     color="#fbbf24"
@@ -292,101 +292,37 @@ export default function CurtainOverlay({ onRevealComplete }) {
                     speed="5s"
                     borderWidth="3px"
                     borderRadius="32px"
-                    className="relative z-[10] w-[85%] max-w-[650px] mx-auto"
+                    className="relative z-[10] w-auto mx-auto"
                 >
                     <div
                         ref={centerCardRef}
                         onMouseMove={handleCardMouseMove}
                         onMouseLeave={handleCardMouseLeave}
-                        className="p-6 md:p-8 glass-card text-center flex flex-col items-center w-full relative"
+                        className="p-8 md:p-12 glass-card text-center flex flex-col items-center relative"
                         style={{ transformStyle: 'preserve-3d' }}
                         role="dialog"
                         aria-label="e-Sanad Launch Screen"
                         aria-modal="true"
                     >
-                        {/* Header Row: Logo - Title - Logo */}
-                        <div className="w-full flex items-center justify-between mb-4 mt-2 px-2">
-                            {/* Left Logo */}
-                            <img
-                                src={`${import.meta.env.BASE_URL}logos/punjab-govt.png`}
-                                alt="Government of Punjab"
-                                className="h-16 md:h-20 w-auto object-contain flex-shrink-0"
-                            />
-
-                            {/* Center: Digital verification text */}
-                            <div className="flex-grow flex flex-col items-center justify-center px-4">
-                                <h2 className="text-gray-900 text-base md:text-lg font-bold leading-tight text-center">
-                                    Digital verification of PSEB academic certificates
-                                    <br />through E-Sanad portal for use abroad
-                                </h2>
-                            </div>
-
-                            {/* Right Logo */}
-                            <img
-                                src={`${import.meta.env.BASE_URL}logos/pseb.png`}
-                                alt="Punjab School Education Board"
-                                className="h-16 md:h-20 w-auto object-contain flex-shrink-0"
-                            />
-                        </div>
-
-                        {/* Punjabi Inauguration Text - Black */}
-                        <p className="font-punjabi text-gray-900 text-2xl md:text-3xl font-bold mt-4 mb-2">
-                            ਦਾ ਉਦਘਾਟਨ
-                        </p>
-
-                        {/* Minister's Name - Gold/Amber */}
-                        <p className="font-punjabi text-[#d97706] text-xl md:text-2xl font-bold mb-1">
-                            ਸ. ਹਰਜੋਤ ਸਿੰਘ ਬੈਂਸ ਜੀ
-                        </p>
-
-                        {/* Minister's Title */}
-                        <p className="font-punjabi text-gray-800 text-base md:text-lg font-medium mb-6">
-                            ਸਿੱਖਿਆ ਮੰਤਰੀ, ਪੰਜਾਬ ਸਰਕਾਰ
-                        </p>
-
-                        {/* Launch Button */}
-                        <div className="mb-6 relative z-50">
-                            <GlareHover
-                                onClick={handleReveal}
-                                width="auto"
-                                height="auto"
-                                background="linear-gradient(135deg, #d97706 0%, #f59e0b 50%, #fbbf24 100%)"
-                                borderRadius="16px"
-                                borderColor="rgba(245, 158, 11, 0.5)"
-                                glareColor="#ffffff"
-                                glareOpacity={0.5}
-                                glareAngle={-45}
-                                glareSize={200}
-                                transitionDuration={600}
-                                className="px-12 py-4 shadow-[0_10px_30px_rgba(245,158,11,0.3)] hover:shadow-[0_15px_40px_rgba(245,158,11,0.4)]"
-                            >
-                                <span className="text-white text-xl font-bold tracking-wide">
-                                    Launch
-                                </span>
-                            </GlareHover>
-                        </div>
-
-                        {/* Date in Punjabi */}
-                        <p className="font-punjabi text-gray-700 text-base md:text-lg font-medium mb-2">
-                            ਸੋਮਵਾਰ, 12 ਜਨਵਰੀ 2026
-                        </p>
-
-                        {/* E-Sanad */}
-                        <p className="text-gray-900 text-xl md:text-2xl font-bold mb-8">
-                            E-Sanad
-                        </p>
-
-                        {/* Footer: NIC Logo + Initiative Text */}
-                        <div className="w-full flex items-center justify-center gap-4 border-t border-gray-200 pt-6 mt-auto">
-                            <img
-                                src={`${import.meta.env.BASE_URL}logos/nic.png`}
-                                alt="NIC"
-                                className="h-10 md:h-12 w-auto object-contain"
-                            />
-                            <span className="text-gray-700 text-sm md:text-base font-medium">
-                                An initiative of Ministry of External Affairs
+                        {/* Launch Button Only */}
+                        <GlareHover
+                            onClick={handleReveal}
+                            width="auto"
+                            height="auto"
+                            background="linear-gradient(135deg, #d97706 0%, #f59e0b 50%, #fbbf24 100%)"
+                            borderRadius="20px"
+                            borderColor="rgba(245, 158, 11, 0.5)"
+                            glareColor="#ffffff"
+                            glareOpacity={0.5}
+                            glareAngle={-45}
+                            glareSize={200}
+                            transitionDuration={600}
+                            className="px-16 py-5 shadow-[0_10px_30px_rgba(245,158,11,0.3)] hover:shadow-[0_15px_40px_rgba(245,158,11,0.4)]"
+                        >
+                            <span className="text-white text-2xl md:text-3xl font-bold tracking-wide">
+                                Launch
                             </span>
-                        </div>
+                        </GlareHover>
                     </div>
                 </StarBorder>
             </div>
