@@ -37,8 +37,11 @@ export default function LandingPage() {
                 />
             </div>
 
-            {/* Main Content Card - UPSCALED */}
-            <div className="relative z-10 w-full max-w-[1000px] mx-auto px-8 py-6 text-center">
+            {/* Main Content Card - UPSCALED 115% */}
+            <div
+                className="relative z-10 w-full max-w-[1000px] mx-auto px-8 py-6 text-center"
+                style={{ transform: 'scale(1.15)', transformOrigin: 'center center' }}
+            >
 
                 {/* Header Row: Logos closer together with Board Name */}
                 <div className="flex items-center justify-center gap-8 md:gap-12 mb-6">
