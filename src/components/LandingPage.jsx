@@ -11,7 +11,7 @@ export default function LandingPage() {
 
     return (
         <main className="min-h-screen relative overflow-hidden flex flex-col items-center justify-center">
-            {/* Warm Cream/White Gradient Background - No Sky Blue */}
+            {/* Warm Cream/White Gradient Background */}
             <div
                 className="absolute inset-0 z-0"
                 style={{
@@ -27,40 +27,38 @@ export default function LandingPage() {
                 }}
             />
 
-            {/* Sparkles / Particles */}
-            <div className="absolute inset-0 z-0 opacity-40">
+            {/* Sparkles / Particles - Same as curtains */}
+            <div className="absolute inset-0 z-0 opacity-50 mix-blend-multiply">
                 <Particles
-                    particleCount={80}
-                    particleColors={['#fbbf24', '#f59e0b', '#d97706']}
-                    speed={0.05}
-                    particleBaseSize={60}
+                    particleCount={100}
+                    particleColors={['#fbbf24', '#d97706', '#f59e0b']}
+                    speed={0.15}
+                    particleBaseSize={80}
                 />
             </div>
 
-            {/* Main Content Card - Revealed Behind Curtains */}
-            <div className="relative z-10 w-full max-w-[900px] mx-auto px-6 py-4 text-center">
+            {/* Main Content Card */}
+            <div className="relative z-10 w-full max-w-[800px] mx-auto px-6 py-4 text-center">
 
-                {/* Header Row: Logo - Board Name - Logo */}
-                <div className="flex items-center justify-between mb-4">
+                {/* Header Row: Logos closer together with Board Name */}
+                <div className="flex items-center justify-center gap-6 md:gap-10 mb-4">
                     {/* Left Logo */}
                     <img
                         src={`${base}logos/punjab-govt.png`}
                         alt="Government of Punjab"
-                        className="h-16 md:h-20 w-auto object-contain"
+                        className="h-14 md:h-18 w-auto object-contain"
                     />
 
                     {/* Center - Board Name in Punjabi */}
-                    <div className="flex-grow px-4">
-                        <h1 className="font-punjabi text-gray-900 text-xl md:text-2xl font-bold">
-                            ਪੰਜਾਬ ਸਕੂਲ ਸਿੱਖਿਆ ਬੋਰਡ
-                        </h1>
-                    </div>
+                    <h1 className="font-punjabi text-gray-900 text-lg md:text-2xl font-bold">
+                        ਪੰਜਾਬ ਸਕੂਲ ਸਿੱਖਿਆ ਬੋਰਡ
+                    </h1>
 
                     {/* Right Logo */}
                     <img
                         src={`${base}logos/pseb.png`}
                         alt="Punjab School Education Board"
-                        className="h-16 md:h-20 w-auto object-contain"
+                        className="h-14 md:h-18 w-auto object-contain"
                     />
                 </div>
 
@@ -71,67 +69,60 @@ export default function LandingPage() {
                 </p>
 
                 {/* Punjabi Inauguration Text */}
-                <p className="font-punjabi text-gray-900 text-2xl md:text-3xl font-bold mt-4 mb-1">
+                <p className="font-punjabi text-gray-900 text-2xl md:text-3xl font-bold mt-3 mb-1">
                     ਦਾ ਉਦਘਾਟਨ
                 </p>
 
                 {/* "ਵੱਲੋਂ" in small letters */}
-                <p className="font-punjabi text-gray-600 text-sm md:text-base font-medium mb-3">
+                <p className="font-punjabi text-gray-600 text-xs md:text-sm font-medium mb-2">
                     ਵੱਲੋਂ
                 </p>
 
                 {/* Minister's Name - Gold/Amber */}
-                <p className="font-punjabi text-[#d97706] text-lg md:text-2xl font-bold mb-0">
+                <p className="font-punjabi text-[#d97706] text-lg md:text-xl font-bold mb-0">
                     ਸ. ਹਰਜੋਤ ਸਿੰਘ ਬੈਂਸ ਜੀ
                 </p>
 
                 {/* Minister's Title */}
-                <p className="font-punjabi text-gray-800 text-sm md:text-base font-medium mb-4">
+                <p className="font-punjabi text-gray-800 text-xs md:text-sm font-medium mb-3">
                     ਸਿੱਖਿਆ ਮੰਤਰੀ, ਪੰਜਾਬ ਸਰਕਾਰ
                 </p>
 
-                {/* Chairman's Name - Gold/Amber (same style as Minister) */}
-                <p className="font-punjabi text-[#d97706] text-lg md:text-2xl font-bold mb-0">
-                    ਡਾ. ਅਮਰਪਾਲ ਸਿੰਘ, I.A.S. (Retd.)
+                {/* Chairman's Name - Gold/Amber with smaller I.A.S. (Retd.) */}
+                <p className="font-punjabi text-[#d97706] text-lg md:text-xl font-bold mb-0">
+                    ਡਾ. ਅਮਰਪਾਲ ਸਿੰਘ, <span className="text-sm md:text-base">I.A.S. (Retd.)</span>
                 </p>
 
                 {/* Chairman's Title */}
-                <p className="font-punjabi text-gray-800 text-sm md:text-base font-medium mb-5">
+                <p className="font-punjabi text-gray-800 text-xs md:text-sm font-medium mb-4">
                     ਚੇਅਰਮੈਨ ਪੰਜਾਬ ਸਕੂਲ ਸਿੱਖਿਆ ਬੋਰਡ
                 </p>
 
                 {/* Date in Punjabi */}
-                <p className="font-punjabi text-gray-700 text-base md:text-lg font-semibold mb-1">
+                <p className="font-punjabi text-gray-700 text-sm md:text-base font-semibold mb-1">
                     ਸੋਮਵਾਰ, 12 ਜਨਵਰੀ 2026
                 </p>
 
-                {/* E-Sanad */}
-                <p className="text-gray-900 text-xl md:text-2xl font-bold mb-6">
+                {/* E-Sanad - Now clickable link */}
+                <a
+                    href="https://www.pseb.ac.in/esanad"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block text-gray-900 text-xl md:text-2xl font-bold mb-5 hover:text-[#d97706] transition-colors cursor-pointer"
+                >
                     E-Sanad
-                </p>
+                </a>
 
-                {/* Footer: NIC Logo + Initiative Text */}
-                <div className="w-full flex items-center justify-center gap-4 border-t border-gray-200 pt-4">
+                {/* Footer: NIC Logo + Initiative Text - Made smaller and subtle */}
+                <div className="w-full flex items-center justify-center gap-3 border-t border-gray-200/50 pt-3 opacity-70">
                     <img
                         src={`${base}logos/nic.png`}
                         alt="NIC"
-                        className="h-10 md:h-12 w-auto object-contain"
+                        className="h-6 md:h-8 w-auto object-contain"
                     />
-                    <span className="text-gray-700 text-xs md:text-sm font-medium">
+                    <span className="text-gray-500 text-[10px] md:text-xs font-medium">
                         An initiative of Ministry of External Affairs
                     </span>
-                </div>
-
-                {/* Minimal Link to PSEB e-Sanad */}
-                <div className="mt-6">
-                    <a
-                        href="https://www.pseb.ac.in/esanad"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-blue-700 hover:text-blue-900 text-sm underline underline-offset-2 transition-colors"
-                    >
-                        Visit e-Sanad Portal →
-                    </a>
                 </div>
             </div>
         </main>
