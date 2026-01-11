@@ -91,14 +91,14 @@ export default function LandingPage() {
                     ਸਿੱਖਿਆ ਮੰਤਰੀ, ਪੰਜਾਬ ਸਰਕਾਰ
                 </p>
 
-                {/* Chairman's Name - Gold/Amber with smaller I.A.S. (Retd.) */}
+                {/* Chairman's Name - Gold/Amber */}
                 <p className="font-punjabi text-[#d97706] text-xl md:text-2xl font-bold mb-1">
-                    ਡਾ. ਅਮਰਪਾਲ ਸਿੰਘ, <span className="text-base md:text-lg">I.A.S. (Retd.)</span>
+                    ਡਾ. ਅਮਰਪਾਲ ਸਿੰਘ ਜੀ
                 </p>
 
                 {/* Chairman's Title */}
                 <p className="font-punjabi text-gray-800 text-sm md:text-base font-medium mb-5">
-                    ਚੇਅਰਮੈਨ ਪੰਜਾਬ ਸਕੂਲ ਸਿੱਖਿਆ ਬੋਰਡ
+                    ਚੇਅਰਮੈਨ, ਪੰਜਾਬ ਸਕੂਲ ਸਿੱਖਿਆ ਬੋਰਡ
                 </p>
 
                 {/* Date in Punjabi */}
@@ -111,9 +111,9 @@ export default function LandingPage() {
                     href="https://www.pseb.ac.in/esanad"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block text-gray-900 text-2xl md:text-3xl font-bold mb-6 hover:text-[#d97706] transition-colors cursor-pointer"
+                    className="inline-block text-gray-900 text-xl md:text-2xl font-bold mb-6 hover:text-[#d97706] transition-colors cursor-pointer"
                 >
-                    E-Sanad
+                    E-Sanad Services for PSEB
                 </a>
 
                 {/* Footer: NIC Logo + Initiative Text - Made smaller and subtle */}

@@ -5,6 +5,10 @@ import LocomotiveScroll from 'locomotive-scroll';
 import GlareHover from './GlareHover';
 import Particles from './ParticlesBackground';
 import SplashCursor from './SplashCursor';
+
+// Toggle: Set to true to enable splash cursor effect
+const ENABLE_SPLASH_CURSOR = false;
+
 import CurtainEdge, { CurtainEdgeRight } from './CurtainEdge';
 import StarBorder from './StarBorder';
 
@@ -205,7 +209,7 @@ export default function CurtainOverlay({ onRevealComplete }) {
             data-scroll-container
             className="fixed inset-0 z-[1000] overflow-hidden"
         >
-            <SplashCursor />
+            {ENABLE_SPLASH_CURSOR && <SplashCursor />}
 
             {/* Scroll Progress Indicator */}
             <div className="scroll-indicator">
