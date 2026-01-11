@@ -56,7 +56,7 @@ export default function LandingPage() {
 
                 {/* Punjabi Inauguration Text - Updated */}
                 <p className="font-punjabi text-gray-900 text-2xl md:text-4xl font-bold mt-6 mb-2">
-                    ਦਾ ਉਦਘਾਟਨ ਸਮਾਰੋਹ
+                    ਦਾ ਉਦਘਾਟਨ
                 </p>
 
                 {/* "ਵੱਲੋਂ" in small letters */}
