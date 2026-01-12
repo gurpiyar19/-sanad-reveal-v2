@@ -109,7 +109,7 @@ export default function LandingPage() {
                             ਸ਼੍ਰੀ ਦਲੀਪ ਕੁਮਾਰ
                         </p>
                         <p className="font-punjabi text-gray-800 text-sm md:text-base font-medium">
-                            ਵਦੀਕ ਮੁੱਖ ਸਕੱਤਰ, ਪੰਜਾਬ ਸਰਕਾਰ
+                            ਵਧੀਕ ਮੁੱਖ ਸਕੱਤਰ, ਪੰਜਾਬ ਸਰਕਾਰ
                         </p>
                     </div>
                 </div>
