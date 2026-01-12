@@ -52,8 +52,8 @@ export default function LandingPage() {
                         className="h-18 md:h-24 w-auto object-contain"
                     />
 
-                    {/* Center - Board Name in Punjabi - BIGGER */}
-                    <h1 className="font-punjabi text-gray-900 text-3xl md:text-5xl font-bold">
+                    {/* Center - Board Name in Punjabi - WIDER & PROMINENT */}
+                    <h1 className="font-punjabi text-gray-900 text-3xl md:text-5xl font-black tracking-wide transform scale-x-110 px-4">
                         ਪੰਜਾਬ ਸਕੂਲ ਸਿੱਖਿਆ ਬੋਰਡ
                     </h1>
 
