@@ -43,8 +43,8 @@ export default function LandingPage() {
                 style={{ transform: 'scale(1.15)', transformOrigin: 'center center' }}
             >
 
-                {/* Header Row: Logos closer together with Board Name */}
-                <div className="flex items-center justify-center gap-8 md:gap-12 mb-6">
+                {/* Header Row: Logos spread out with Board Name */}
+                <div className="flex items-center justify-center gap-12 md:gap-20 mb-6">
                     {/* Left Logo */}
                     <img
                         src={`${base}logos/punjab-govt.png`}
@@ -57,11 +57,11 @@ export default function LandingPage() {
                         ਪੰਜਾਬ ਸਕੂਲ ਸਿੱਖਿਆ ਬੋਰਡ
                     </h1>
 
-                    {/* Right Logo */}
+                    {/* Right Logo - Broader */}
                     <img
                         src={`${base}logos/pseb.png`}
                         alt="Punjab School Education Board"
-                        className="h-18 md:h-24 w-auto object-contain"
+                        className="h-18 md:h-24 w-auto object-contain scale-x-110"
                     />
                 </div>
 
@@ -83,7 +83,7 @@ export default function LandingPage() {
 
                 {/* Minister's Name - Gold/Amber */}
                 <p className="font-punjabi text-[#d97706] text-xl md:text-2xl font-bold mb-1">
-                    ਸ. ਹਰਜੋਤ ਸਿੰਘ ਬੈਂਸ ਜੀ
+                    ਸ. ਹਰਜੋਤ ਸਿੰਘ ਬੈਂਸ
                 </p>
 
                 {/* Minister's Title */}
@@ -96,7 +96,7 @@ export default function LandingPage() {
                     {/* Chairman */}
                     <div className="text-center">
                         <p className="font-punjabi text-[#d97706] text-lg md:text-xl font-bold mb-1">
-                            ਡਾ. ਅਮਰਪਾਲ ਸਿੰਘ ਜੀ
+                            ਡਾ. ਅਮਰਪਾਲ ਸਿੰਘ
                         </p>
                         <p className="font-punjabi text-gray-800 text-sm md:text-base font-medium">
                             ਚੇਅਰਮੈਨ, ਪੰਜਾਬ ਸਕੂਲ ਸਿੱਖਿਆ ਬੋਰਡ
