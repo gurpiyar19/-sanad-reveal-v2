@@ -52,8 +52,8 @@ export default function LandingPage() {
                         className="h-18 md:h-24 w-auto object-contain"
                     />
 
-                    {/* Center - Board Name in Punjabi */}
-                    <h1 className="font-punjabi text-gray-900 text-xl md:text-3xl font-bold">
+                    {/* Center - Board Name in Punjabi - BIGGER */}
+                    <h1 className="font-punjabi text-gray-900 text-2xl md:text-4xl font-bold">
                         ਪੰਜਾਬ ਸਕੂਲ ਸਿੱਖਿਆ ਬੋਰਡ
                     </h1>
 
@@ -91,15 +91,28 @@ export default function LandingPage() {
                     ਸਿੱਖਿਆ ਮੰਤਰੀ, ਪੰਜਾਬ ਸਰਕਾਰ
                 </p>
 
-                {/* Chairman's Name - Gold/Amber */}
-                <p className="font-punjabi text-[#d97706] text-xl md:text-2xl font-bold mb-1">
-                    ਡਾ. ਅਮਰਪਾਲ ਸਿੰਘ ਜੀ
-                </p>
+                {/* Chairman and Shri Dalip Kumar - Side by Side */}
+                <div className="flex items-start justify-center gap-10 md:gap-16 mb-4">
+                    {/* Chairman */}
+                    <div className="text-center">
+                        <p className="font-punjabi text-[#d97706] text-lg md:text-xl font-bold mb-1">
+                            ਡਾ. ਅਮਰਪਾਲ ਸਿੰਘ ਜੀ
+                        </p>
+                        <p className="font-punjabi text-gray-800 text-sm md:text-base font-medium">
+                            ਚੇਅਰਮੈਨ, ਪੰਜਾਬ ਸਕੂਲ ਸਿੱਖਿਆ ਬੋਰਡ
+                        </p>
+                    </div>
 
-                {/* Chairman's Title */}
-                <p className="font-punjabi text-gray-800 text-sm md:text-base font-medium mb-5">
-                    ਚੇਅਰਮੈਨ, ਪੰਜਾਬ ਸਕੂਲ ਸਿੱਖਿਆ ਬੋਰਡ
-                </p>
+                    {/* Shri Dalip Kumar */}
+                    <div className="text-center">
+                        <p className="font-punjabi text-[#d97706] text-lg md:text-xl font-bold mb-1">
+                            ਸ਼੍ਰੀ ਦਲੀਪ ਕੁਮਾਰ
+                        </p>
+                        <p className="font-punjabi text-gray-800 text-sm md:text-base font-medium">
+                            ਵਦੀਕ ਮੁੱਖ ਸਕੱਤਰ, ਪੰਜਾਬ ਸਰਕਾਰ
+                        </p>
+                    </div>
+                </div>
 
                 {/* Date in Punjabi */}
                 <p className="font-punjabi text-gray-700 text-base md:text-lg font-semibold mb-2">
