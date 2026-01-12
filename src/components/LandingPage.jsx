@@ -129,14 +129,20 @@ export default function LandingPage() {
                     E-Sanad Services for PSEB
                 </a>
 
-                {/* Footer: DHI Logo (Full Opacity) + NIC Logo & Text (Subtle) */}
-                <div className="w-full flex items-center justify-center gap-6 border-t border-gray-200/50 pt-4">
-                    {/* DHI Logo - Full Opacity */}
-                    <img
-                        src={`${base}logos/dhi.png`}
-                        alt="DHI"
-                        className="h-10 md:h-12 w-auto object-contain"
-                    />
+                {/* Footer: DHI Section + NIC Section */}
+                <div className="w-full flex items-center justify-center gap-8 border-t border-gray-200/50 pt-4">
+                    {/* DHI Section - Logo + Text */}
+                    <div className="flex items-center gap-3">
+                        <img
+                            src={`${base}logos/dhi-2.png`}
+                            alt="Department of Higher Education"
+                            className="h-10 md:h-12 w-auto object-contain"
+                        />
+                        <div className="flex flex-col items-start leading-tight">
+                            <span className="text-gray-900 text-xs md:text-sm font-bold">Department of Higher Education</span>
+                            <span className="text-gray-600 text-[10px] md:text-xs font-medium">Govt. of Punjab</span>
+                        </div>
+                    </div>
 
                     {/* NIC Section - Faded */}
                     <div className="flex items-center gap-4 opacity-70">
