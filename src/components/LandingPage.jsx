@@ -53,7 +53,7 @@ export default function LandingPage() {
                     />
 
                     {/* Center - Board Name in Punjabi - BIGGER */}
-                    <h1 className="font-punjabi text-gray-900 text-2xl md:text-4xl font-bold">
+                    <h1 className="font-punjabi text-gray-900 text-3xl md:text-5xl font-bold">
                         ਪੰਜਾਬ ਸਕੂਲ ਸਿੱਖਿਆ ਬੋਰਡ
                     </h1>
 
@@ -82,7 +82,7 @@ export default function LandingPage() {
                 </p>
 
                 {/* Minister's Name - Gold/Amber */}
-                <p className="font-punjabi text-[#d97706] text-xl md:text-2xl font-bold mb-1">
+                <p className="font-punjabi text-[#d97706] text-2xl md:text-3xl font-bold mb-1">
                     ਸ. ਹਰਜੋਤ ਸਿੰਘ ਬੈਂਸ
                 </p>
 
@@ -95,7 +95,7 @@ export default function LandingPage() {
                 <div className="flex items-start justify-center gap-10 md:gap-16 mb-4">
                     {/* Chairman */}
                     <div className="text-center">
-                        <p className="font-punjabi text-[#d97706] text-lg md:text-xl font-bold mb-1">
+                        <p className="font-punjabi text-[#d97706] text-xl md:text-2xl font-bold mb-1">
                             ਡਾ. ਅਮਰਪਾਲ ਸਿੰਘ
                         </p>
                         <p className="font-punjabi text-gray-800 text-sm md:text-base font-medium">
@@ -105,7 +105,7 @@ export default function LandingPage() {
 
                     {/* Shri Dalip Kumar */}
                     <div className="text-center">
-                        <p className="font-punjabi text-[#d97706] text-lg md:text-xl font-bold mb-1">
+                        <p className="font-punjabi text-[#d97706] text-xl md:text-2xl font-bold mb-1">
                             ਸ਼੍ਰੀ ਦਲੀਪ ਕੁਮਾਰ
                         </p>
                         <p className="font-punjabi text-gray-800 text-sm md:text-base font-medium">
