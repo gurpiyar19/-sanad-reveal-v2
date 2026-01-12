@@ -57,11 +57,11 @@ export default function LandingPage() {
                         ਪੰਜਾਬ ਸਕੂਲ ਸਿੱਖਿਆ ਬੋਰਡ
                     </h1>
 
-                    {/* Right Logo - Broader */}
+                    {/* Right Logo - Broader & Taller (Uniform Scale) */}
                     <img
                         src={`${base}logos/pseb.png`}
                         alt="Punjab School Education Board"
-                        className="h-18 md:h-24 w-auto object-contain scale-x-110"
+                        className="h-18 md:h-24 w-auto object-contain scale-110"
                     />
                 </div>
 
