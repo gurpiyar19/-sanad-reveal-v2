@@ -129,16 +129,26 @@ export default function LandingPage() {
                     E-Sanad Services for PSEB
                 </a>
 
-                {/* Footer: NIC Logo + Initiative Text - Made smaller and subtle */}
-                <div className="w-full flex items-center justify-center gap-4 border-t border-gray-200/50 pt-4 opacity-60">
+                {/* Footer: DHI Logo (Full Opacity) + NIC Logo & Text (Subtle) */}
+                <div className="w-full flex items-center justify-center gap-6 border-t border-gray-200/50 pt-4">
+                    {/* DHI Logo - Full Opacity */}
                     <img
-                        src={`${base}logos/nic.png`}
-                        alt="NIC"
-                        className="h-8 md:h-10 w-auto object-contain"
+                        src={`${base}logos/dhi.png`}
+                        alt="DHI"
+                        className="h-10 md:h-12 w-auto object-contain"
                     />
-                    <span className="text-gray-500 text-xs md:text-sm font-medium">
-                        An initiative of Ministry of External Affairs
-                    </span>
+
+                    {/* NIC Section - Faded */}
+                    <div className="flex items-center gap-4 opacity-70">
+                        <img
+                            src={`${base}logos/nic.png`}
+                            alt="NIC"
+                            className="h-8 md:h-10 w-auto object-contain"
+                        />
+                        <span className="text-gray-500 text-xs md:text-sm font-medium">
+                            An initiative of Ministry of External Affairs
+                        </span>
+                    </div>
                 </div>
             </div>
         </main>
